@@ -1,0 +1,4 @@
+node_modules
+*.gif
+.DS_Store
+package-lock.json
