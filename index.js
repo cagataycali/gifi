@@ -5,7 +5,7 @@ module.exports = url => {
   return new Promise(async (resolve, reject) => {
     const browser = await puppeteer.launch({
       args: ['--no-sandbox', '--disable-setuid-sandbox'],
-      headless: false
+      headless: true
     })
     const page = await browser.newPage()
     await page.goto(`https://gifi.cagatay.me/?pdf=${url}`)
